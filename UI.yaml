@@ -1,0 +1,19 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# COCO128 数据集 https://www.kaggle.com/ultralytics/coco128 (COCO数据集中train2017部分的前128张图片) 出自 Ultralytics
+# 使用示例 : python train.py --data coco128.yaml
+# 目录结构如下：
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco128  ← 如本地没有数据集，则会自动下载到这里
+
+
+# 训练/验证/测试集可以使用以下三种方式指定：1) 目录：path/to/imgs，2) 文件：path/to/imgs.txt，或者 3) 列表：[path/to/imgs1, path/to/imgs2, ..]
+path: ../datasets/UI  # 数据集根目录
+train: train  # 训练集图片目录 ('path'的相对路径) 128 images
+val: train  # 验证集图片目录 ('path'的相对路径) 128 images
+test:  # test images (optional)
+
+# Classes
+nc: 10  # 类别数量
+names: ['root', 'level_0', 'level_1', 'level_2','clickable', 'level_0_scrollable', 'level_1_scrollable', 'disabled', 'selectable', 'scrollable']  # 类别名称
