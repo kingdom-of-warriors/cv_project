@@ -1,6 +1,6 @@
 task: detect
 mode: train
-model: /home/ljr/Project/yolov10/ultralytics/cfg/models/v10/yolov10x.yaml
+model: /home/ljr/Project/yolov10/ultralytics/cfg/models/v10/yolov10s.yaml
 data: /home/ljr/Project/UI.yaml
 epochs: 100
 time: null

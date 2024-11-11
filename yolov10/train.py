@@ -3,7 +3,7 @@ warnings.filterwarnings('ignore')
 from ultralytics import YOLO
  
 if __name__ == '__main__':
-    model = YOLO('/home/ljr/Project/yolov10/ultralytics/cfg/models/v10/yolov10x.yaml') # 地址改成自己的
+    model = YOLO('/home/ljr/Project/yolov10/ultralytics/cfg/models/v10/yolov10s.yaml') # 地址改成自己的
     model.train(data='/home/ljr/Project/UI.yaml',
                 cache=False,
                 imgsz=640,
